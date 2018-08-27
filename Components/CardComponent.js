@@ -25,7 +25,7 @@ class CardComponent extends Component {
                     <Left>
                         <Thumbnail source={require('../assets/me.png')} />
                         <Body>
-                            <Text>AL NAIJA </Text>
+                            <Text>Afonso Pinto Rafael </Text>
                             <Text note>Jan 15, 2018</Text>
                         </Body>
                     </Left>

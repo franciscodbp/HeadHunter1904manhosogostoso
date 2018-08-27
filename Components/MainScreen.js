@@ -1,7 +1,5 @@
 import React, { Component } from "react";
 import {
-    View,
-    Text,
     StyleSheet,
     Platform
 } from "react-native";
@@ -13,15 +11,13 @@ import AddMediaTab from './AppTabNavigator/AddMediaTab'
 import ProfileTab from './AppTabNavigator/ProfileTab'
 
 import { TabNavigator } from 'react-navigation'
-import { Icon } from 'native-base'
 
 class MainScreen extends Component {
 
     static navigationOptions = {
-
-        headerLeft: <Icon name="ios-camera-outline" style={{ paddingLeft: 10 }} />,
+        
         title: "HeadHunter",
-        headerRight: <Icon style={{ paddingRight: 10 }} name="ios-send-outline" />
+       
     }
 
     render() {
@@ -70,10 +66,3 @@ const AppTabNavigator = TabNavigator({
         }
     })
 
-const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center'
-    }
-});
