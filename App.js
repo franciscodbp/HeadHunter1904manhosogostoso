@@ -1,11 +1,12 @@
 import React from 'react';
 import { StyleSheet, Text, View, YellowBox } from 'react-native';
-import { StackNavigator } from 'react-navigation'
+import { StackNavigator } from "react-navigation"
 //import MainScreen from './Components/MainScreen'
-import LoginPage from './Components/LoginPage'
+//import LoginPage from './Components/LoginPage'
 //import Splash from './Components/Splash'
+import Register from './Components/Register'
 
-console.ignoredYellowBox = ["Warning: Failed"];
+console.disableYellowBox = true;
 
 export default class App extends React.Component {
   render() {
@@ -17,8 +18,10 @@ export default class App extends React.Component {
 
 const AppStackNavigator = StackNavigator({
   Main: {
-    screen: LoginPage
+    
     //screen: Splash,
+    //screen: LoginPage,
+    screen: Register
     //screen: MainScreen
     
   }
